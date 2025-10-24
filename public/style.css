@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+
+
+
+/* ===== Reset & Base Styles ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Container ===== */
+.profile-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Header ===== */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+#logoutBtn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#logoutBtn i {
+  margin-right: 5px;
+}
+
+#logoutBtn:hover {
+  background-color: #e43b3f;
+}
+
+/* ===== Profile Card ===== */
+.profile-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background-color: #fafafa;
+}
+
+.profile-card h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.profile-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.profile-card strong {
+  color: #555;
+}
+
+/* ===== Update Password Section ===== */
+.update-password {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.update-password h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.update-password input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.update-password input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#changePasswordBtn {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#changePasswordBtn i {
+  margin-right: 8px;
+}
+
+#changePasswordBtn:hover {
+  background-color: #0063d1;
+}
+
+/* ===== Messages ===== */
+#passwordMsg {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #28a745;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  .profile-header h1 {
+    font-size: 1.5rem;
+  }
+
+  #logoutBtn, #changePasswordBtn {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
